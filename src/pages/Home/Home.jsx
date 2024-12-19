@@ -1,8 +1,9 @@
-import './home.css'
+import { HomeProfile } from "../components";
 
 export default function Home() {
-    return (
-        <>
-        </>
-    )
+  return ( <>
+   
+   <HomeProfile/>
+
+  </>);
 }
