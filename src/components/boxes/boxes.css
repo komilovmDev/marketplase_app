@@ -1,0 +1,123 @@
+.boxes {
+    width: 100%;
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boxesCon {
+    width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    gap: 7px;
+    flex-wrap: wrap;
+}
+
+.boxes_box {
+    width: 375px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.boxes_box .boxesCon_top {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.boxes_box .boxesCon_top p:nth-child(1) {
+    font-size: 14px;
+    font-weight: 700;
+    color: #333;
+}
+
+.boxes_box .boxesCon_top p:nth-child(2) {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.boxes_box .boxesCon_top p:nth-child(3) {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.boxesCon_bottom {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.boxesCon_bottom p:nth-child(1) {
+    font-size: 15px;
+    font-weight: 700;
+    color: #333;
+}
+
+.boxesCon_bottom p:nth-child(2) {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.boxesCon_bottom div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.boxesCon_bottom div p:nth-child(1) {
+    font-size: 16px;
+    font-weight: 600;
+    color: blue;
+} 
+
+.boxesCon_bottom div button:nth-child(1) {
+    border: 1px solid #0078ff;
+    background: transparent;
+    color: #0078ff;
+    padding: 5px 10px;
+    transition: .3s;
+}
+
+.boxesCon_bottom div button:nth-child(1):hover {
+    background: #0078ff;
+    color: white;
+    cursor: pointer;
+}
+
+.boxes_pagin {   
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.boxes_pagin button {
+    padding: 10px;
+    color: #0078ff;
+    border: 1px solid #0078ff;
+    background: transparent;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+
+.boxes_pagin button:hover {
+    background-color: #0078ff;
+    color: white;
+    cursor: pointer;
+}
+
+.boxes_pagin .active {
+    color: #0078ff;
+    font-weight: 700;
+}
+
+.boxes_pagin span {
+    cursor: pointer;
+}
