@@ -14,11 +14,14 @@
 .filterCon_box {
     width: 300px;
     height: auto;
-    border: 1px solid black;
+    background-color: #fff;
+    border: 1px solid #ddd;
     padding: 10px;
     display: flex;
     flex-direction: column;
     gap: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 8px;
 }
 
 .filterCon_box p {
@@ -44,13 +47,27 @@
     font-size: 14px;
 }
 
+.filterCon_box a {
+    /* background-color: #0078ff;
+    border: none;
+    color: white;
+    font-size: 14px;
+    padding: 3px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
 .filterCon_box button {
+    width: 100%;
     background-color: #0078ff;
     border: none;
     color: white;
     font-size: 14px;
     padding: 3px;
     cursor: pointer;
+    border-radius: 4px;
 }
 
 .filterCon_box_info {

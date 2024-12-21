@@ -1,123 +1,113 @@
+/* Umumiy quti dizayni */
 .boxes {
-    width: 100%;
-    margin: 40px 0;
+    max-width: 1140px; 
+    margin: 0 auto; 
+    padding: 40px 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    gap: 20px;
 }
 
 .boxesCon {
-    width: 1140px;
-    margin: 0 auto;
-    display: flex;
-    gap: 7px;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
 }
 
 .boxes_box {
-    width: 375px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
+    padding: 15px;
     display: flex;
     flex-direction: column;
-    border: 1px solid black;
-    padding: 10px;
+    justify-content: space-between;
 }
 
-.boxes_box .boxesCon_top {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-
-.boxes_box .boxesCon_top p:nth-child(1) {
+.boxesCon_top {
+    margin-bottom: 10px;
     font-size: 14px;
-    font-weight: 700;
-    color: #333;
+    color: #555;
 }
 
-.boxes_box .boxesCon_top p:nth-child(2) {
-    font-size: 16px;
-    font-weight: 700;
-}
-
-.boxes_box .boxesCon_top p:nth-child(3) {
-    font-size: 14px;
-    font-weight: 700;
+.boxesCon_top p {
+    margin: 5px 0;
+    line-height: 1.4;
 }
 
 .boxesCon_bottom {
-    margin-top: 10px;
     display: flex;
     flex-direction: column;
-    gap: 5px;
-}
-
-.boxesCon_bottom p:nth-child(1) {
-    font-size: 15px;
-    font-weight: 700;
-    color: #333;
-}
-
-.boxesCon_bottom p:nth-child(2) {
+    gap: 10px;
     font-size: 14px;
-    font-weight: 600;
+    color: #333;
 }
 
 .boxesCon_bottom div {
     display: flex;
     justify-content: space-between;
-}
-
-.boxesCon_bottom div p:nth-child(1) {
-    font-size: 16px;
-    font-weight: 600;
-    color: blue;
-} 
-
-.boxesCon_bottom div button:nth-child(1) {
-    border: 1px solid #0078ff;
-    background: transparent;
-    color: #0078ff;
-    padding: 5px 10px;
-    transition: .3s;
-}
-
-.boxesCon_bottom div button:nth-child(1):hover {
-    background: #0078ff;
-    color: white;
-    cursor: pointer;
-}
-
-.boxes_pagin {   
-    margin-top: 10px;
-    display: flex;
     align-items: center;
-    justify-content: center;
     gap: 10px;
 }
 
-.boxes_pagin button {
-    padding: 10px;
-    color: #0078ff;
-    border: 1px solid #0078ff;
-    background: transparent;
+.boxesCon_bottom button {
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
     border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.boxesCon_bottom button:hover {
+    background-color: #0056b3;
+}
+
+
+.boxes_pagin {
     display: flex;
-    align-items: center;
     justify-content: center;
-    font-size: 16px;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.boxes_pagin button {
+    padding: 5px 10px;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 .boxes_pagin button:hover {
-    background-color: #0078ff;
-    color: white;
-    cursor: pointer;
-}
-
-.boxes_pagin .active {
-    color: #0078ff;
-    font-weight: 700;
+    background-color: #ccc;
 }
 
 .boxes_pagin span {
+    padding: 5px 10px;
+    font-weight: bold;
     cursor: pointer;
+    border-radius: 5px;
+}
+
+.boxes_pagin span.active {
+    background-color: #007bff;
+    color: #fff;
+}
+
+
+@media (max-width: 992px) {
+    .boxesCon {
+        grid-template-columns: repeat(2, 1fr); /* Bir qatorga 2 ta box */
+    }
+}
+
+@media (max-width: 576px) {
+    .boxesCon {
+        grid-template-columns: repeat(1, 1fr); /* Bir qatorga 1 ta box */
+    }
 }

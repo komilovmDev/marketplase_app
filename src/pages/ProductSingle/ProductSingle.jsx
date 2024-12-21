@@ -24,7 +24,7 @@ export default function ProductSingle() {
                         </div>
                         <div className="singleInfo">
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit consectetur numquam iusto officiis nesciunt quibusdam soluta. Nisi ullam soluta cumque culpa minus rem totam facere dolor accusantium voluptates saepe, quidem provident quam a, maxime at atque officiis. Saepe, libero atque! Aperiam tempora possimus hic dolor repudiandae consequatur dolore quam, in laborum minus quidem neque deleniti fuga inventore dolores a expedita, nulla saepe culpa voluptatem reprehenderit voluptates! Et laudantium commodi nisi aliquid temporibus placeat, corrupti molestiae quo labore asperiores reprehenderit consequuntur architecto! Officiis vitae itaque aut aliquid amet earum quisquam omnis nostrum illo soluta id tempora similique exercitationem, laborum dignissimos tempore.</p>
-                            <button>Reception</button>
+                            <button>Qabul qilish</button>
                         </div>
                     </div>
                     <div className="productSingle_con_Aside">
@@ -39,10 +39,11 @@ export default function ProductSingle() {
                                 <p>~ 632 км, рефрижератор, без догруза (отдельное авто)</p>
                                 <div>
                                     <p>4 481 230 сум</p>
-                                    <Link to={'/productsingle'}><button>Preview</button></Link>
+                                    <Link to={'/productsingle'}><button>Ko‘rib chiqish</button></Link>
                                 </div>
                             </div>
-                        </div>                <div className="boxes_box">
+                        </div>
+                        <div className="boxes_box">
                             <div className="boxesCon_top">
                                 <p>21.12—23.12</p>
                                 <p>Бишкек (KG) — Ташкент (UZ)</p>
@@ -53,10 +54,11 @@ export default function ProductSingle() {
                                 <p>~ 632 км, рефрижератор, без догруза (отдельное авто)</p>
                                 <div>
                                     <p>4 481 230 сум</p>
-                                    <Link to={'/productsingle'}><button>Preview</button></Link>
+                                    <Link to={'/productsingle'}><button>Ko‘rib chiqish</button></Link>
                                 </div>
                             </div>
-                        </div>                <div className="boxes_box">
+                        </div>
+                        <div className="boxes_box">
                             <div className="boxesCon_top">
                                 <p>21.12—23.12</p>
                                 <p>Бишкек (KG) — Ташкент (UZ)</p>
@@ -67,10 +69,11 @@ export default function ProductSingle() {
                                 <p>~ 632 км, рефрижератор, без догруза (отдельное авто)</p>
                                 <div>
                                     <p>4 481 230 сум</p>
-                                    <Link to={'/productsingle'}><button>Preview</button></Link>
+                                    <Link to={'/productsingle'}><button>Ko‘rib chiqish</button></Link>
                                 </div>
                             </div>
-                        </div>                <div className="boxes_box">
+                        </div>
+                        <div className="boxes_box">
                             <div className="boxesCon_top">
                                 <p>21.12—23.12</p>
                                 <p>Бишкек (KG) — Ташкент (UZ)</p>
@@ -81,7 +84,7 @@ export default function ProductSingle() {
                                 <p>~ 632 км, рефрижератор, без догруза (отдельное авто)</p>
                                 <div>
                                     <p>4 481 230 сум</p>
-                                    <Link to={'/productsingle'}><button>Preview</button></Link>
+                                    <Link to={'/productsingle'}><button>Ko‘rib chiqish</button></Link>
                                 </div>
                             </div>
                         </div>

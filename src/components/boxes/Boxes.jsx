@@ -18,7 +18,7 @@ export default function Boxes() {
                         <p>~ 632 км, рефрижератор, без догруза (отдельное авто)</p>
                         <div>
                             <p>4 481 230 сум</p>
-                            <Link to={'/productsingle'}><button>Preview</button></Link>
+                            <Link to={'/productsingle'}><button>Ko‘rib chiqish</button></Link>
                         </div>
                     </div>
                 </div>
@@ -33,7 +33,7 @@ export default function Boxes() {
                         <p>~ 632 км, рефрижератор, без догруза (отдельное авто)</p>
                         <div>
                             <p>4 481 230 сум</p>
-                            <Link to={'/productsingle'}><button>Preview</button></Link>
+                            <Link to={'/productsingle'}><button>Ko‘rib chiqish</button></Link>
                         </div>
                     </div>
                 </div>
@@ -48,7 +48,7 @@ export default function Boxes() {
                         <p>~ 632 км, рефрижератор, без догруза (отдельное авто)</p>
                         <div>
                             <p>4 481 230 сум</p>
-                            <Link to={'/productsingle'}><button>Preview</button></Link>
+                            <Link to={'/productsingle'}><button>Ko‘rib chiqish</button></Link>
                         </div>
                     </div>
                 </div>
@@ -63,7 +63,7 @@ export default function Boxes() {
                         <p>~ 632 км, рефрижератор, без догруза (отдельное авто)</p>
                         <div>
                             <p>4 481 230 сум</p>
-                            <Link to={'/productsingle'}><button>Preview</button></Link>
+                            <Link to={'/productsingle'}><button>Ko‘rib chiqish</button></Link>
                         </div>
                     </div>
                 </div>
@@ -79,7 +79,7 @@ export default function Boxes() {
                         <p>~ 632 км, рефрижератор, без догруза (отдельное авто)</p>
                         <div>
                             <p>4 481 230 сум</p>
-                            <Link to={'/productsingle'}><button>Preview</button></Link>
+                            <Link to={'/productsingle'}><button>Ko‘rib chiqish</button></Link>
                         </div>
                     </div>
                 </div>
@@ -94,7 +94,7 @@ export default function Boxes() {
                         <p>~ 632 км, рефрижератор, без догруза (отдельное авто)</p>
                         <div>
                             <p>4 481 230 сум</p>
-                            <Link to={'/productsingle'}><button>Preview</button></Link>
+                            <Link to={'/productsingle'}><button>Ko‘rib chiqish</button></Link>
                         </div>
                     </div>
                 </div>

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import './filter.css'
 
 
@@ -8,7 +9,7 @@ export default function Filter() {
                 <div className="filterCon_box">
                     <p>Tashuvchi kerakmi?</p>
                     <p>Bepul! Yukingizni qo'shing va minglab ishonchli tashuvchilar siz bilan bog'lanishlari mumkin hozir!</p>
-                    <button>Yuk Qo’shing</button>
+                    <Link to={'/zayafka'}><button>Yuk Qo’shing</button></Link>
                 </div>
                 <div className="filterCon_box">
                     <p>Yo'l yuklarini qidirish</p>
