@@ -26,40 +26,6 @@
     color: red;
 }
 
-/* 
-.zyafka_con_form {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    grid-gap: 10px;
-    flex: 1 1 calc(50% - 10px);
-}
-
-.zyafka_con_form div {
-    display: flex;
-    gap: 5px;
-    align-items: flex-start;
-}
-
-.zyafka_con_form div:nth-child(9) {
-    display: flex;
-    flex-direction: column;
-}
-
-.zyafka_con_form div input[type="number"] {
-    width: 50px;
-}
-
-.zyafka_con_form div div {
-    display: flex;
-    flex-direction: row;
-}
-
-.zyafka_con_form div div input {
-    width: 50px;
-} */
-
 .zyafka_con_form {
     display: flex;
     flex-wrap: wrap;
