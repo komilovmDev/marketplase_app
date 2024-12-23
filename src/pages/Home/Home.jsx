@@ -4,13 +4,13 @@ import Footer from '../../components/Footer/Footer'
 import Header from '../../components/header/Header'
 import Navbar from '../../components/Navbar/Navbar' 
 
-export default function Home() {
+export default function Home({setBoxData, boxData}) {
     return (
         <>
             <Navbar />
             <Header />
             <Filter />
-            <Boxes />
+            <Boxes boxData={boxData} setBoxData={setBoxData}/>
             <Footer />
         </>
     )

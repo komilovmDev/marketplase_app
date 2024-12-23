@@ -3,10 +3,13 @@ import { IoStarSharp } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import TabProfile from "./TabProfile";
 import Rating from "./Rating";
+import Navbar from "../../components/Navbar/Navbar";
+import Boxes from "../../components/boxes/Boxes";
 
-function HomeProfile() {
+function HomeProfile({ boxData, setBoxData }) {
   return (
     <>
+      <Navbar />
       <div className="row">
         <div className="container">
           <div className="author-info">
@@ -28,6 +31,8 @@ function HomeProfile() {
                 </Link>
               </div>
 
+
+
               <div className="item-info">
                 <ul className="item-info__ul">
                   <li className="item-info__li">
@@ -48,7 +53,6 @@ function HomeProfile() {
                 </ul>
               </div>
             </div>
-
             <div className="author-content">
               <div className="author-content__buttons">
                 <button className="author-content__button">Portfolio</button>
@@ -58,9 +62,12 @@ function HomeProfile() {
                 </button>
               </div>
             </div>
-
-            <TabProfile />
           </div>
+          <div>
+            <button className="author-content__button">Olingan Ishlar</button>
+            <button className="author-content__button">Berilgan Ishlar</button>
+          </div>
+          <Boxes boxData={boxData} setBoxData={setBoxData}/>
         </div>
       </div>
     </>

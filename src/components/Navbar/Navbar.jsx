@@ -21,13 +21,13 @@ export default function Navbar() {
                 <div className="navBottom">
                     <div className="max1140">
                         <div className="navBottom_img">
-                            <Link to={'/'}><img src="http://127.0.0.1:5500/source/assets/img/logo.png" alt="" /></Link>
+                            <Link to={'/'}><img src="https://validthemes.net/site-template/markis/assets/img/logo.png" alt="" /></Link>
                         </div>
                         <div className="links">
                             <ul>
                                 <li>HOME</li>
                                 <li>PAGES</li>
-                                <li>ALL PRODUCT</li>
+                                <Link to={'/profil'}><li>PROFIL</li></Link>
                                 <li>NEW</li>
                                 <li>POPULAR</li>
                                 <li>BLOG</li>
