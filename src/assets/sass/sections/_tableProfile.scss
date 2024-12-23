@@ -1,0 +1,120 @@
+/* Author box */
+.author-box {
+    font-family: Arial, sans-serif;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .box-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+         
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+      background: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      width: calc(33.333% - 20px);
+      margin: 10px 0;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+      }
+    }
+    &__thumb {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      border-bottom: 1px solid #ddd;
+    }
+    .thumb__img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+    
+    .thumb__img:hover {
+      transform: scale(1.05);
+    }
+
+    &__info {
+      padding: 15px;
+    }
+
+    &__title {
+      font-size: 18px;
+      font-weight: bold;
+      color: #333;
+      margin: 0 0 10px;
+    }
+    &__subtitle {
+      font-size: 14px;
+      color: #555;
+      margin: 0 0 15px;
+    }
+    &__type {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 10px 0;
+
+      p{
+        font-size: 14px;
+        color: #666;
+        margin: 0;
+      }
+    
+    }
+
+    &__bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 15px;
+    }
+
+      
+  .price h4 {
+    font-size: 18px;
+    font-weight: bold;
+    color: $title-color;
+  }
+  
+  .price h4:hover {
+    color: $button-color;
+    cursor: pointer;
+  }
+
+  .preview-button {
+    padding: 10px 20px;
+    background-color: $button-color;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .preview-button:hover {
+    background-color: #0056b3;
+  
+  }
+        
+  }
+  
