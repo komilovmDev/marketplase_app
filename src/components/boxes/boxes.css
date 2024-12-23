@@ -1,0 +1,113 @@
+/* Umumiy quti dizayni */
+.boxes {
+    max-width: 1140px; 
+    margin: 0 auto; 
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.boxesCon {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+}
+
+.boxes_box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.boxesCon_top {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+.boxesCon_top p {
+    margin: 5px 0;
+    line-height: 1.4;
+}
+
+.boxesCon_bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+.boxesCon_bottom div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.boxesCon_bottom button {
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.boxesCon_bottom button:hover {
+    background-color: #0056b3;
+}
+
+
+.boxes_pagin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.boxes_pagin button {
+    padding: 5px 10px;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.boxes_pagin button:hover {
+    background-color: #ccc;
+}
+
+.boxes_pagin span {
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.boxes_pagin span.active {
+    background-color: #007bff;
+    color: #fff;
+}
+
+
+@media (max-width: 992px) {
+    .boxesCon {
+        grid-template-columns: repeat(2, 1fr); /* Bir qatorga 2 ta box */
+    }
+}
+
+@media (max-width: 576px) {
+    .boxesCon {
+        grid-template-columns: repeat(1, 1fr); /* Bir qatorga 1 ta box */
+    }
+}
