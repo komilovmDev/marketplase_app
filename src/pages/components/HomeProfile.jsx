@@ -13,14 +13,13 @@ function HomeProfile({ boxData, setBoxData }) {
       <div className="row">
         <div className="container">
           <div className="author-info">
-            <div className="author-info__imges">
-              <img
+            <div className="author-info__imges" style={{width: '170px' , height: '170px' , border: '1px solid rgb(200, 200, 200)'}}>
+              <img style={{borderRadius: '50%'}}
                 src="https://validthemes.net/site-template/markis/assets/img/team/1.jpg"
                 alt="author image"
               />
             </div>
           </div>
-
           <div className="profile-info">
             <div className="top-info">
               <div className="bio">
@@ -29,10 +28,7 @@ function HomeProfile({ boxData, setBoxData }) {
                 <Link href="#" className="bio__aLink">
                   Follow
                 </Link>
-              </div>
-
-
-
+              </div> 
               <div className="item-info">
                 <ul className="item-info__ul">
                   <li className="item-info__li">

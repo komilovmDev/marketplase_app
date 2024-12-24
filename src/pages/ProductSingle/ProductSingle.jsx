@@ -1,10 +1,25 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import Footer from "../../components/Footer/Footer";
 import Navbar from "../../components/Navbar/Navbar";
-import './productsingle.css'
+import './productsingle.css';
 
+export default function ProductSingle({ setBoxData, boxData }) {
+    const [currentPage, setCurrentPage] = useState(1);
+    const itemsPerPage = 6;
 
-export default function ProductSingle() {
+    const totalPages = Math.ceil(boxData.length / itemsPerPage);
+
+    const handleNext = () => {
+        if (currentPage < totalPages) setCurrentPage(currentPage + 1);
+    };
+
+    const handlePrev = () => {
+        if (currentPage > 1) setCurrentPage(currentPage - 1);
+    };
+
+    const currentData = boxData.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
+
     return (
         <>
             <Navbar />
@@ -14,7 +29,7 @@ export default function ProductSingle() {
                         <div className="boxes_box boxes_box_single">
                             <div className="boxesCon_top">
                                 <p>21.12—23.12</p>
-                                <p>Бишкек (KG) — Ташкент (UZ) рыба глубокой заморозки	3 т	6 м³</p>
+                                <p>Бишкек (KG) — Ташкент (UZ) рыба глубокой заморозки 3 т 6 м³</p>
                             </div>
                             <div className="boxesCon_bottom">
                                 <p>18.12.2024</p>
@@ -23,75 +38,34 @@ export default function ProductSingle() {
                             </div>
                         </div>
                         <div className="singleInfo">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit consectetur numquam iusto officiis nesciunt quibusdam soluta. Nisi ullam soluta cumque culpa minus rem totam facere dolor accusantium voluptates saepe, quidem provident quam a, maxime at atque officiis. Saepe, libero atque! Aperiam tempora possimus hic dolor repudiandae consequatur dolore quam, in laborum minus quidem neque deleniti fuga inventore dolores a expedita, nulla saepe culpa voluptatem reprehenderit voluptates! Et laudantium commodi nisi aliquid temporibus placeat, corrupti molestiae quo labore asperiores reprehenderit consequuntur architecto! Officiis vitae itaque aut aliquid amet earum quisquam omnis nostrum illo soluta id tempora similique exercitationem, laborum dignissimos tempore.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
                             <button>Qabul qilish</button>
                         </div>
                     </div>
                     <div className="productSingle_con_Aside">
-                        <div className="boxes_box">
-                            <div className="boxesCon_top">
-                                <p>21.12—23.12</p>
-                                <p>Бишкек (KG) — Ташкент (UZ)</p>
-                                <p>рыба глубокой заморозки	3 т	6 м³</p>
-                            </div>
-                            <div className="boxesCon_bottom">
-                                <p>18.12.2024</p>
-                                <p>~ 632 км, рефрижератор, без догруза (отдельное авто)</p>
-                                <div>
-                                    <p>4 481 230 сум</p>
-                                    <Link to={'/productsingle'}><button>Ko‘rib chiqish</button></Link>
+                        {currentData.map((box, index) => (
+                            <div className="boxes_box" key={index}>
+                                <div className="boxesCon_top">
+                                    <p>{box.date}—{box.date2}</p>
+                                    <p>{box.locationA} — {box.locationB}</p>
+                                    <p>{box.infom3}</p>
+                                </div>
+                                <div className="boxesCon_bottom">
+                                    <p>{box.date2}</p>
+                                    <p>{box.infokm}</p>
+                                    <div>
+                                        <p>{box.price} сум</p>
+                                        <Link to="/productsingle">
+                                            <button>Ko‘rib chiqish</button>
+                                        </Link>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="boxes_box">
-                            <div className="boxesCon_top">
-                                <p>21.12—23.12</p>
-                                <p>Бишкек (KG) — Ташкент (UZ)</p>
-                                <p>рыба глубокой заморозки	3 т	6 м³</p>
-                            </div>
-                            <div className="boxesCon_bottom">
-                                <p>18.12.2024</p>
-                                <p>~ 632 км, рефрижератор, без догруза (отдельное авто)</p>
-                                <div>
-                                    <p>4 481 230 сум</p>
-                                    <Link to={'/productsingle'}><button>Ko‘rib chiqish</button></Link>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="boxes_box">
-                            <div className="boxesCon_top">
-                                <p>21.12—23.12</p>
-                                <p>Бишкек (KG) — Ташкент (UZ)</p>
-                                <p>рыба глубокой заморозки	3 т	6 м³</p>
-                            </div>
-                            <div className="boxesCon_bottom">
-                                <p>18.12.2024</p>
-                                <p>~ 632 км, рефрижератор, без догруза (отдельное авто)</p>
-                                <div>
-                                    <p>4 481 230 сум</p>
-                                    <Link to={'/productsingle'}><button>Ko‘rib chiqish</button></Link>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="boxes_box">
-                            <div className="boxesCon_top">
-                                <p>21.12—23.12</p>
-                                <p>Бишкек (KG) — Ташкент (UZ)</p>
-                                <p>рыба глубокой заморозки	3 т	6 м³</p>
-                            </div>
-                            <div className="boxesCon_bottom">
-                                <p>18.12.2024</p>
-                                <p>~ 632 км, рефрижератор, без догруза (отдельное авто)</p>
-                                <div>
-                                    <p>4 481 230 сум</p>
-                                    <Link to={'/productsingle'}><button>Ko‘rib chiqish</button></Link>
-                                </div>
-                            </div>
-                        </div>
+                        ))}
                     </div>
                 </div>
             </div>
             <Footer />
         </>
-    )
+    );
 }

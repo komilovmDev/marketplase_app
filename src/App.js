@@ -32,7 +32,7 @@ function App() {
     <>
       <Routes>
         <Route element={<Home boxData={boxData} setBoxData={setBoxData} />} path="/" />
-        <Route element={<ProductSingle />} path="/productsingle" />
+        <Route element={<ProductSingle boxData={boxData} setBoxData={setBoxData} />} path="/productsingle" />
         <Route element={<Zyafka boxData={boxData} setBoxData={setBoxData} />} path="/zayafka" />
         <Route element={<HomeProfile boxData={boxData} setBoxData={setBoxData} />} path="/profil" />
       </Routes>

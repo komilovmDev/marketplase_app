@@ -23,12 +23,10 @@
 
 .productSingle_con_Aside {
     width: 40%;
-    /* border: 1px solid #c4c4c4; */
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    /* padding: 20px; */
+    align-items: "";
+    justify-content: start;
     gap: 20px;
 }
 
