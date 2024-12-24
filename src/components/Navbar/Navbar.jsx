@@ -14,7 +14,7 @@ export default function Navbar() {
                             <p>Community Users: <b>397877</b></p>
                         </div>
                         <div className="navTop_right">
-                            <button><FaRegUser />Login</button>
+                            <Link to={'/login'}><button><FaRegUser />Login</button></Link>
                         </div>
                     </div>
                 </div>

@@ -64,7 +64,8 @@ export default function Zayafka({ boxData, setBoxData }) {
             infokm: `~ ${formData.dimensions.length}×${formData.dimensions.width}×${formData.dimensions.height} m, ${formData.transportType}`,
             price: formData.price,
             email: formData.email,
-            phone: formData.phone
+            phone: formData.phone,
+            priceUnit: formData.priceUnit
         };
 
         setBoxData((prev) => [...prev, newBox]);

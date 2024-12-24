@@ -5,22 +5,21 @@ import { FaAngleLeft, FaAngleRight } from "react-icons/fa6";
 
 export default function Boxes({ setBoxData, boxData }) {
     const [currentPage, setCurrentPage] = useState(1);
-    const itemsPerPage = 6; // Show 6 items per page
+    const itemsPerPage = 6; 
 
-    // Calculate total number of pages
+
     const totalPages = Math.ceil(boxData.length / itemsPerPage);
 
-    // Navigate to the previous page
+
     const handlePrev = () => {
         if (currentPage > 1) setCurrentPage(currentPage - 1);
     };
 
-    // Navigate to the next page
+
     const handleNext = () => {
         if (currentPage < totalPages) setCurrentPage(currentPage + 1);
     };
 
-    // Get the current page's data
     const currentData = boxData.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
 
     return (
@@ -37,7 +36,7 @@ export default function Boxes({ setBoxData, boxData }) {
                             <p>{box.date2}</p>
                             <p>{box.infokm}</p>
                             <div>
-                                <p>{box.price} сум</p>
+                                <p>{box.price} {box.priceUnit}</p>
                                 <Link to="/productsingle">
                                     <button>Ko‘rib chiqish</button>
                                 </Link>

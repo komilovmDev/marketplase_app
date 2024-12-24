@@ -1,0 +1,107 @@
+.loginCon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 100px 0;
+}
+
+.loginBox {
+    width: 540px;
+    min-height: 440px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 1px solid #ddd;
+}
+
+.loginBox_top {
+    width: 100%;
+    padding: 30px;
+    background-color: #0078ff;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.loginBox_top h4 {
+    text-transform: uppercase;
+    color: white;
+}
+
+.loginBox_top p {
+    color: white;
+    font-size: 14px;
+}
+
+.loginForm {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.loginForm input {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #ddd;
+    padding-left: 10px;
+    box-shadow: none;
+    font-weight: 600;
+}
+
+
+.loginForm span {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.loginForm span input {
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+}
+
+.loginForm span p {
+    font-size: 14px;
+    color: #666666;
+}
+
+.loginForm button {
+    width: 151px;
+    height: 54px;
+    border: 2px solid #0078ff;
+    color: #666666;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.registerLink {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.registerLink p {
+    color: #666666;
+    font-size: 14px;
+}
+
+.registerLink a {
+    text-decoration: underline;
+    color: #0078ff;
+    font-weight: 700;
+}

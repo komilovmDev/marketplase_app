@@ -5,12 +5,16 @@ import ProductSingle from "./pages/ProductSingle/ProductSingle";
 import Zyafka from "./pages/Zyafka/Zyafka";
 import { Profiler, useEffect, useState } from "react";
 import HomeProfile from "./pages/components/HomeProfile";
+import Login from "./auth/Login";
+import Register from "./auth/Register";
 
 function App() {
 
+
   const [boxData, setBoxData] = useState(() => {
-    // Load initial data from localStorage if available
     const savedData = localStorage.getItem('boxData');
+    console.log(savedData);
+
     return savedData ? JSON.parse(savedData) : [
       {
         date: '21.12',
@@ -19,7 +23,8 @@ function App() {
         infom3: 'рыба глубокой заморозки 3 т 6 м³',
         date2: '18.12.2024',
         infokm: '~ 632 км, рефрижератор, без догруза (отдельное авто)',
-        price: '4 481 230'
+        price: '4 481 230',
+        priceUnit: "UZD"
       }
     ];
   });
@@ -35,6 +40,8 @@ function App() {
         <Route element={<ProductSingle boxData={boxData} setBoxData={setBoxData} />} path="/productsingle" />
         <Route element={<Zyafka boxData={boxData} setBoxData={setBoxData} />} path="/zayafka" />
         <Route element={<HomeProfile boxData={boxData} setBoxData={setBoxData} />} path="/profil" />
+        <Route element={<Login />} path="/login" />
+        <Route element={<Register />} path="/register" />
       </Routes>
     </>
   );

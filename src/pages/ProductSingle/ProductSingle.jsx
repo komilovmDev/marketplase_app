@@ -39,7 +39,7 @@ export default function ProductSingle({ setBoxData, boxData }) {
                         </div>
                         <div className="singleInfo">
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
-                            <button>Qabul qilish</button>
+                            <Link to={'/login'}><button>Qabul qilish</button></Link>
                         </div>
                     </div>
                     <div className="productSingle_con_Aside">
@@ -54,7 +54,7 @@ export default function ProductSingle({ setBoxData, boxData }) {
                                     <p>{box.date2}</p>
                                     <p>{box.infokm}</p>
                                     <div>
-                                        <p>{box.price} сум</p>
+                                        <p>{box.price} {box.priceUnit}</p>
                                         <Link to="/productsingle">
                                             <button>Ko‘rib chiqish</button>
                                         </Link>
