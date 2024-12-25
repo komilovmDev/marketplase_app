@@ -1,0 +1,68 @@
+.notfication {
+    width: 100%;
+}
+
+.notficationList {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.notficationList_left {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.notficationList_left_time {
+    font-size: 13px;
+    color: #555;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.notficationList_left_date {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    color: #555;
+}
+
+.notficationList_left_title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #555;
+}
+
+.notficationList_left_deck {
+    font-size: 14px;
+}
+
+.notficationList_right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.notficationList_right_title {
+    font-size: 14px;
+}
+
+.notficationList_right button {
+    background-color: #0078ff;
+    padding: 10px 15px;
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 5px;
+}

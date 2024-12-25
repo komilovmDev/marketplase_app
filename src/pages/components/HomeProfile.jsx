@@ -1,20 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import { IoStarSharp } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import TabProfile from "./TabProfile";
 import Rating from "./Rating";
 import Navbar from "../../components/Navbar/Navbar";
 import Boxes from "../../components/boxes/Boxes";
+import Notfication from "../../components/notfication/Notfication";
+import Footer from "../../components/Footer/Footer";
 
 function HomeProfile({ boxData, setBoxData }) {
+
+  const [statusBox , setStatusBox] = useState(1)
+
   return (
     <>
       <Navbar />
       <div className="row">
         <div className="container">
           <div className="author-info">
-            <div className="author-info__imges" style={{width: '170px' , height: '170px' , border: '1px solid rgb(200, 200, 200)'}}>
-              <img style={{borderRadius: '50%'}}
+            <div className="author-info__imges" style={{ width: '170px', height: '170px', border: '1px solid rgb(200, 200, 200)' }}>
+              <img style={{ borderRadius: '50%' }}
                 src="https://validthemes.net/site-template/markis/assets/img/team/1.jpg"
                 alt="author image"
               />
@@ -28,7 +33,7 @@ function HomeProfile({ boxData, setBoxData }) {
                 <Link href="#" className="bio__aLink">
                   Follow
                 </Link>
-              </div> 
+              </div>
               <div className="item-info">
                 <ul className="item-info__ul">
                   <li className="item-info__li">
@@ -60,12 +65,20 @@ function HomeProfile({ boxData, setBoxData }) {
             </div>
           </div>
           <div>
-            <button className="author-content__button">Olingan Ishlar</button>
-            <button className="author-content__button">Berilgan Ishlar</button>
+            <button onClick={() => setStatusBox(1)} className="author-content__button">Bajarilyatgon Ishlar</button>
+            <button className="author-content__button">Bajarilgan Ishlar</button>
+            <button onClick={() => setStatusBox(2)} className="author-content__button">Xabarlar</button>
           </div>
-          <Boxes boxData={boxData} setBoxData={setBoxData}/>
+          {
+            statusBox == 1 ? (
+              <Boxes boxData={boxData} setBoxData={setBoxData} />
+            ) : statusBox == 2 ? (
+              <Notfication />
+            ) : null
+          }
         </div>
       </div>
+      <Footer />
     </>
   );
 }
