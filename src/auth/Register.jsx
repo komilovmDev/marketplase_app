@@ -22,7 +22,7 @@ export default function Register() {
                             <input type="checkbox" />
                             <p>Remember Me</p>
                         </span>
-                        <button>RESGISTER</button>
+                        <button>RESGISTER</button>``
                     </div>
                     <div className="registerLink">
                         <p>Not a member yet?</p>
