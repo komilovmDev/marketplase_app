@@ -5,7 +5,7 @@ import { FaAngleLeft, FaAngleRight } from "react-icons/fa6";
 
 export default function Boxes({ setBoxData, boxData }) {
     const [currentPage, setCurrentPage] = useState(1);
-    const itemsPerPage = 6; 
+    const itemsPerPage = 9; 
 
 
     const totalPages = Math.ceil(boxData.length / itemsPerPage);
