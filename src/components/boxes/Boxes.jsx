@@ -4,7 +4,7 @@ import './boxes.css';
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa6";
 
 export default function Boxes({ setBoxData, boxData }) {
-    const [currentPage, setCurrentPage] = useState(1);
+    const [currentPage, setCurrentPage] = useState(1); 
     const itemsPerPage = 9; 
 
 
