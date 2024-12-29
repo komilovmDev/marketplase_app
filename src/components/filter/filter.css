@@ -90,3 +90,14 @@
     font-size: 14px;
     text-align: center;
 }
+
+@media screen and (max-width: 768px) {
+ .filterCon {
+    width: 100%;    
+    overflow-x: scroll;
+    padding-left: 10px;
+ }   
+ .filterCon_box {
+    min-width: 280px;
+ }
+}
