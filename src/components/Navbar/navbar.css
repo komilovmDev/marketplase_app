@@ -70,3 +70,49 @@ nav {
 .links ul li:hover {
     color: #0078ff;
 }
+
+.burgerNav {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .max1440 {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .navBottom {
+        position: relative;
+        align-items: center;
+    }
+    .links {
+        width: 100%;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        transform: translateY(0);
+    }
+    .links ul {
+        width: 100%;
+        background-color: white;
+        flex-direction: column;
+        padding: 20px;
+    }   
+
+    .navBottom_img img {
+        width: 120px;
+        position: absolute;
+        right: 10px;
+        top: 5px;
+    }
+    .burgerNav {
+        display: flex;
+        font-size: 22px;
+        margin-left: 5px;
+    }
+    .burgerClose {
+        transform: translateY(-1000px);
+    }
+}

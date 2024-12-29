@@ -1,10 +1,34 @@
 header {
+    position: relative; 
     width: 100%;
-    height: auto;
-    background-image: url(../../images/headerbg.webp);
+    height: auto; 
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../../images/truk3.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
+    background-position-y: -250px;
     background-attachment: fixed;
+    z-index: -2; 
+}
+
+header::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.3; 
+    z-index: -1;
 }
 
 .headerCon {
@@ -15,6 +39,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    z-index: 1;
 }
 
 .headerCon_info {

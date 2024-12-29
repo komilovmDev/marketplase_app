@@ -1,8 +1,14 @@
 import { Link } from 'react-router-dom';
 import './navbar.css'
 import { FaRegUser } from "react-icons/fa";
+import { MdOutlineMenu } from "react-icons/md";
+import { useState } from 'react';
+import { IoClose } from "react-icons/io5";
 
 export default function Navbar() {
+
+    const [isOpen , setIsOpen] = useState(false)
+
     return (
         <>
             <nav>
@@ -19,11 +25,12 @@ export default function Navbar() {
                     </div>
                 </div>
                 <div className="navBottom">
+                    <button onClick={() => isOpen ? setIsOpen(!isOpen) : setIsOpen(!isOpen)} className="burgerNav">{isOpen ? <IoClose /> : <MdOutlineMenu />}</button>
                     <div className="max1140">
                         <div className="navBottom_img">
                             <Link to={'/'}><img src="https://validthemes.net/site-template/markis/assets/img/logo.png" alt="" /></Link>
                         </div>
-                        <div className="links">
+                        <div className={isOpen ? "links" : "links burgerClose"}>
                             <ul>
                                 <li>HOME</li>
                                 <li>PAGES</li>
