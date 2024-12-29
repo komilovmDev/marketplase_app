@@ -129,6 +129,9 @@
 }
 
 @media (max-width: 768px) {
+    .zyafka_con {
+        width: 95%;
+    }
     .zyafka_con_form {
         flex-direction: column;
     }

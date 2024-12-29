@@ -69,3 +69,19 @@
     background: #0078ff;
     color: white;
 }
+
+@media screen and (max-width: 768px) {
+    .productSingle_con {
+        width: 95%;
+        flex-direction: column;
+    }
+    .productSingle_con_boxleft {
+        width: 100%;
+    }
+    .productSingle_con_Aside {
+        width: 100%;
+    }
+    .boxes_box {
+        width: 100%;
+    }
+}

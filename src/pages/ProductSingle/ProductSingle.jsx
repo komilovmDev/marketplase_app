@@ -38,7 +38,7 @@ export default function ProductSingle({ setBoxData, boxData }) {
                             </div>
                         </div>
                         <div className="singleInfo">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque error doloribus, praesentium, autem dolorum sapiente dignissimos unde exercitationem sunt at nesciunt? Optio provident laboriosam quo eaque iusto. Sapiente, minus quo, cupiditate, cumque quidem voluptates quae iste nostrum ducimus nobis qui.</p>
                             <Link to={'/login'}><button>Qabul qilish</button></Link>
                         </div>
                     </div>
